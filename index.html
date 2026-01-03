@@ -20,7 +20,7 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: #009688; /* لون أزرق فاتح */
+            background-color: #009688;
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
@@ -32,35 +32,19 @@
             font-size: 25px;
             display: block;
             transition: 0.3s;
-            color: #ffffff; /* تغيير اللون الأبيض للنصوص */
+            color: #ffffff;
         }
 
         .sidenav a:hover {
-            color: #f1f1f1; /* نص أبيض عند التمرير */
+            color: #f1f1f1;
         }
 
-        /* ألوان لكل خيار */
-        .home {
-            background-color: #4caf50; /* لون أخضر فاتح */
-        }
+        .home { background-color: #4caf50; }
+        .service1 { background-color: #00bcd4; }
+        .service2 { background-color: #ff9800; }
+        .service3 { background-color: #8bc34a; }
+        .contact { background-color: #f44336; }
 
-        .service1 {
-            background-color: #00bcd4; /* لون أزرق فاتح */
-        }
-
-        .service2 {
-            background-color: #ff9800; /* لون برتقالي */
-        }
-
-        .service3 {
-            background-color: #8bc34a; /* لون أخضر فاتح */
-        }
-
-        .contact {
-            background-color: #f44336; /* لون أحمر */
-        }
-
-        /* نمط زر الهامبورغر */
         #menu-btn {
             font-size: 30px;
             cursor: pointer;
@@ -68,7 +52,6 @@
             margin: 20px;
         }
 
-        /* المحتوى الرئيسي */
         .main-content {
             padding: 20px;
         }
@@ -76,28 +59,24 @@
         .header {
             text-align: center;
             padding: 30px;
-            background-color: #4caf50; /* تغيير اللون إلى أخضر فاتح */
+            background-color: #4caf50;
             color: white;
-            border-radius: 50%; /* جعل الشكل مدور */
+            border-radius: 50%;
             width: 300px;
             margin: auto;
             box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
         }
 
-        .header h1 {
-            font-size: 28px;
-            font-weight: bold;
-        }
+        .header h1 { font-size: 28px; font-weight: bold; }
+        .header p { font-size: 18px; color: #fff; }
 
-        .header p {
-            font-size: 18px;
-            color: #fff;
-        }
-
-        /* تنسيق الفقرات */
-        section p {
-            color: #1a237e; /* الأزرق الداكن */
-            font-size: 16px;
+        /* تنسيق الفقرات داخل مستطيلات */
+        .content-section {
+            background-color: #e3f2fd; /* أزرق فاتح للخلفية */
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            color: #1a237e; /* أزرق داكن للنص */
             line-height: 1.6;
         }
 
@@ -130,9 +109,7 @@
             margin-left: 40px;
         }
 
-        .update-link:hover {
-            text-decoration: underline;
-        }
+        .update-link:hover { text-decoration: underline; }
 
     </style>
 </head>
@@ -155,19 +132,32 @@
             <p>نقدم لكم أفضل الخدمات والألعاب، استمتعوا بكل لحظة!</p>
         </div>
 
+        <!-- الصفحة الرئيسية -->
         <section id="home" style="display: block;">
             <h2>مرحبًا في موقعنا</h2>
-            <p>نقدم لك أفضل الألعاب المجانية والبرامج المميزة للـ PS4. سواء كنت محبًا للألعاب أو تبحث عن برامج جديدة لتحسين تجربتك، ستجد هنا كل ما تحتاجه.</p>
-            <p>استمتع بمكتبة ضخمة من الألعاب المجانية والتطبيقات التي ستأخذك إلى عوالم جديدة! اكتشف الآن الألعاب المجانية وابقَ على اطلاع مع آخر التحديثات.</p>
-            <p>إذا كنت جديدًا هنا، نحن نقدم لك أفضل ألعاب <strong>PS4</strong> وأحدث الألعاب، كل ذلك بشكل مجاني! بالإضافة إلى التحديثات المستمرة لتجربة لعب أفضل.</p>
-            <p>استمتع الآن بمجموعتنا المتنوعة من الألعاب والتطبيقات التي ستجعل تجربتك الرقمية أكثر متعة!</p>
+            <div class="content-section">
+                <p>نقدم لك أفضل الألعاب المجانية والبرامج المميزة للـ بي اس فور. سواء كنت محبًا للألعاب أو تبحث عن برامج جديدة لتحسين تجربتك، ستجد هنا كل ما تحتاجه.</p>
+            </div>
+            <div class="content-section">
+                <p>استمتع بمكتبة ضخمة من الألعاب المجانية والتطبيقات التي ستأخذك إلى عوالم جديدة! اكتشف الآن الألعاب المجانية وابقَ على اطلاع مع آخر التحديثات.</p>
+            </div>
+            <div class="content-section">
+                <p>إذا كنت جديدًا هنا، نحن نقدم لك أفضل ألعاب <strong>بي اس فور</strong> وأحدث الألعاب، كل ذلك بشكل مجاني! بالإضافة إلى التحديثات المستمرة لتجربة لعب أفضل.</p>
+            </div>
+            <div class="content-section">
+                <p>استمتع الآن بمجموعتنا المتنوعة من الألعاب والتطبيقات التي ستجعل تجربتك الرقمية أكثر متعة!</p>
+            </div>
         </section>
 
+        <!-- قسم الخدمات -->
         <section id="service2" style="display: none;">
             <h2>الخدمات</h2>
-            <p>نقدم لكم ألعاب وبرامج مجانية للـ PS4.</p>
+            <div class="content-section">
+                <p>نقدم لكم ألعاب وبرامج مجانية للـ بي اس فور.</p>
+            </div>
         </section>
 
+        <!-- قسم الالعاب -->
         <section id="service1" style="display: none;">
             <h2>الالعاب</h2>
             <p>روابط الألعاب:</p>
@@ -181,18 +171,22 @@
                 <li><a href="https://pspkg.com/arabic-games/call-of-duty-black-ops-6-arabic-243.html" target="_blank" class="game-link">Call of Duty Black Ops 6</a></li>
                 <li><a href="https://pspkg.com/arabic-games/dark-souls-remastered-7091.html" target="_blank" class="game-link">Dark Souls Remastered</a></li>
                 <li><a href="https://pspkg.com/ps4/grand-theft-auto-v-ps4-6657.html" target="_blank" class="game-link">Grand Theft Auto V</a></li>
-                <li><a href="https://akirabox.com/LK0G1qkdJG91/file" target="_blank" class="game-link">هيتمان 3</a><span><a href="https://akirabox.com/9AqGQxn8NzMn/file" target="_blank" class="update-link">رابط التحديث</a></span></li>
+                <li><a href="https://akirabox.com/LK0G1qkdJG91/file" target="_blank" class="game-link">Hitman 3</a><span><a href="https://akirabox.com/9AqGQxn8NzMn/file" target="_blank" class="update-link">رابط التحديث</a></span></li>
             </ul>
         </section>
 
         <section id="service3" style="display: none;">
             <h2>التطبيقات</h2>
-            <p>اكتشف أحدث التطبيقات المميزة.</p>
+            <div class="content-section">
+                <p>اكتشف أحدث التطبيقات المميزة.</p>
+            </div>
         </section>
 
         <section id="contact" style="display: none;">
             <h2>اتصل بي</h2>
-            <p>يمكنك الاتصال بي عبر الرقم: <strong>+9630940968762</strong></p>
+            <div class="content-section">
+                <p>يمكنك الاتصال بي عبر الرقم: <strong>+9630940968762</strong></p>
+            </div>
         </section>
     </div>
 
