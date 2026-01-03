@@ -86,10 +86,10 @@
     <!-- الشريط الجانبي -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="#service1" class="service1">خدمة العملات</a>
-        <a href="#service2" class="service2">خدمات</a>
-        <a href="#service3" class="service3">الشحن</a>
-        <a href="#contact" class="contact">اتصل بي</a>
+        <a href="#service1" class="service1" onclick="showContent('service1')">الالعاب</a>
+        <a href="#service2" class="service2" onclick="showContent('service2')">خدمات</a>
+        <a href="#service3" class="service3" onclick="showContent('service3')">الشحن</a>
+        <a href="#contact" class="contact" onclick="showContent('contact')">اتصل بي</a>
     </div>
 
     <!-- محتوى الموقع -->
@@ -99,26 +99,26 @@
             <p>اختَر أحد الخيارات من القائمة لتعرف المزيد</p>
         </div>
 
-        <!-- قسم خدمة العملات -->
-        <section id="service1">
-            <h2>خدمة العملات</h2>
-            <p>هنا يمكنك معرفة تفاصيل خدمة العملات.</p>
+        <!-- قسم الالعاب -->
+        <section id="service1" style="display: none;">
+            <h2>الالعاب</h2>
+            <p>رابط للعبة ببجي: <a href="https://www.pubg.com" target="_blank">اضغط هنا للذهاب إلى لعبة ببجي</a></p>
         </section>
 
         <!-- قسم الخدمات -->
-        <section id="service2">
+        <section id="service2" style="display: none;">
             <h2>خدمات</h2>
             <p>اكتشف جميع الخدمات التي نقدمها.</p>
         </section>
 
         <!-- قسم الشحن -->
-        <section id="service3">
+        <section id="service3" style="display: none;">
             <h2>الشحن</h2>
             <p>تفاصيل حول خدمات الشحن التي نقدمها.</p>
         </section>
 
         <!-- قسم اتصل بي -->
-        <section id="contact">
+        <section id="contact" style="display: none;">
             <h2>اتصل بي</h2>
             <p>يمكنك الاتصال بي عبر الرقم: <strong>+9630940968762</strong></p>
         </section>
@@ -134,6 +134,18 @@
         // إغلاق الشريط الجانبي
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
+        }
+
+        // إظهار المحتوى عند الضغط على الخيار
+        function showContent(sectionId) {
+            // إخفاء جميع الأقسام
+            var sections = document.querySelectorAll('.main-content section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // إظهار القسم الذي تم الضغط عليه
+            document.getElementById(sectionId).style.display = 'block';
         }
     </script>
 
