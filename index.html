@@ -81,7 +81,7 @@
             border-radius: 50%; /* جعل الشكل مدور */
             width: 300px;
             margin: auto;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
         }
 
         .header h1 {
@@ -94,7 +94,13 @@
             color: #fff;
         }
 
-        /* تنسيق رابط الألعاب */
+        /* تنسيق الفقرات */
+        section p {
+            color: #1a237e; /* الأزرق الداكن */
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
         .game-link {
             color: #ff9800;
             font-weight: bold;
@@ -112,7 +118,6 @@
             color: white;
         }
 
-        /* تنسيق رابط التحديث */
         .update-link {
             font-size: 14px;
             color: #ffffff;
@@ -122,7 +127,7 @@
             padding: 10px;
             border-radius: 5px;
             display: inline-block;
-            margin-left: 40px; /* مسافة كبيرة بين الرابط وكلمة رابط التحديث */
+            margin-left: 40px;
         }
 
         .update-link:hover {
@@ -133,10 +138,8 @@
 </head>
 <body>
 
-    <!-- زر الهامبورغر -->
     <span id="menu-btn" onclick="openNav()">☰</span>
 
-    <!-- الشريط الجانبي -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="#home" class="home" onclick="showContent('home')">الصفحة الرئيسية</a>
@@ -146,34 +149,29 @@
         <a href="#contact" class="contact" onclick="showContent('contact')">اتصل بي</a>
     </div>
 
-    <!-- محتوى الموقع -->
     <div class="main-content">
         <div class="header">
             <h1>مرحبًا في موقعنا</h1>
             <p>نقدم لكم أفضل الخدمات والألعاب، استمتعوا بكل لحظة!</p>
         </div>
 
-        <!-- الصفحة الرئيسية -->
         <section id="home" style="display: block;">
             <h2>مرحبًا في موقعنا</h2>
-            <p>نقدم لك أفضل الألعاب المجانية والبرامج المميزة للكمبيوتر وPS4. سواء كنت محبًا للألعاب أو تبحث عن برامج جديدة لتحسين تجربتك، ستجد هنا كل ما تحتاجه.</p>
+            <p>نقدم لك أفضل الألعاب المجانية والبرامج المميزة للـ PS4. سواء كنت محبًا للألعاب أو تبحث عن برامج جديدة لتحسين تجربتك، ستجد هنا كل ما تحتاجه.</p>
             <p>استمتع بمكتبة ضخمة من الألعاب المجانية والتطبيقات التي ستأخذك إلى عوالم جديدة! اكتشف الآن الألعاب المجانية وابقَ على اطلاع مع آخر التحديثات.</p>
-            <p>إذا كنت جديدًا هنا، نحن نقدم لك أفضل ألعاب <strong>PS4</strong> وأحدث ألعاب الكمبيوتر، كل ذلك بشكل مجاني! بالإضافة إلى التحديثات المستمرة لتجربة لعب أفضل.</p>
+            <p>إذا كنت جديدًا هنا، نحن نقدم لك أفضل ألعاب <strong>PS4</strong> وأحدث الألعاب، كل ذلك بشكل مجاني! بالإضافة إلى التحديثات المستمرة لتجربة لعب أفضل.</p>
             <p>استمتع الآن بمجموعتنا المتنوعة من الألعاب والتطبيقات التي ستجعل تجربتك الرقمية أكثر متعة!</p>
         </section>
 
-        <!-- قسم الخدمات -->
         <section id="service2" style="display: none;">
             <h2>الخدمات</h2>
-            <p>نقدم لكم ألعاب وبرامج مجانية للكمبيوتر ولـ PS4.</p>
+            <p>نقدم لكم ألعاب وبرامج مجانية للـ PS4.</p>
         </section>
 
-        <!-- قسم الالعاب -->
         <section id="service1" style="display: none;">
             <h2>الالعاب</h2>
             <p>روابط الألعاب:</p>
             <ul>
-                <!-- Resident Evil (مرتّبة معًا) -->
                 <li><a href="https://pspkg.com/arabic-games/resident-evil-origins-collection-7035.html" target="_blank" class="game-link">Resident Evil Origins Collection</a></li>
                 <li><a href="https://pspkg.com/arabic-games/resident-evil-5-arabic-278.html" target="_blank" class="game-link">Resident Evil 5</a></li>
                 <li><a href="https://pspkg.com/arabic-games/resident-evil-6-arabic-79.html" target="_blank" class="game-link">Resident Evil 6</a></li>
@@ -187,32 +185,23 @@
             </ul>
         </section>
 
-        <!-- قسم التطبيقات -->
         <section id="service3" style="display: none;">
             <h2>التطبيقات</h2>
             <p>اكتشف أحدث التطبيقات المميزة.</p>
         </section>
 
-        <!-- قسم اتصل بي -->
         <section id="contact" style="display: none;">
             <h2>اتصل بي</h2>
             <p>يمكنك الاتصال بي عبر الرقم: <strong>+9630940968762</strong></p>
         </section>
     </div>
 
-    <!-- سكربت -->
     <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
+        function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
+        function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
         function showContent(sectionId) {
             var sections = document.querySelectorAll('.main-content section');
-            sections.forEach(function(section) {
-                section.style.display = 'none';
-            });
+            sections.forEach(function(section) { section.style.display = 'none'; });
             document.getElementById(sectionId).style.display = 'block';
         }
     </script>
