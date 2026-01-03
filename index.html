@@ -20,7 +20,7 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: #111;
+            background-color: #009688; /* لون أزرق فاتح */
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
@@ -32,24 +32,24 @@
             font-size: 25px;
             display: block;
             transition: 0.3s;
-            color: #818181;
+            color: #ffffff; /* تغيير اللون الأبيض للنصوص */
         }
 
         .sidenav a:hover {
-            color: #f1f1f1;
+            color: #f1f1f1; /* نص أبيض عند التمرير */
         }
 
         /* ألوان لكل خيار */
         .service1 {
-            background-color: #4CAF50; /* لون أخضر */
+            background-color: #00bcd4; /* لون أزرق فاتح */
         }
 
         .service2 {
-            background-color: #2196F3; /* لون أزرق */
+            background-color: #ff9800; /* لون برتقالي */
         }
 
         .service3 {
-            background-color: #FF9800; /* لون برتقالي */
+            background-color: #8bc34a; /* لون أخضر فاتح */
         }
 
         .contact {
@@ -72,7 +72,24 @@
         .header {
             text-align: center;
             padding: 30px;
-            background-color: #333;
+            background-color: #4caf50; /* تغيير اللون إلى أخضر فاتح */
+            color: white;
+        }
+
+        /* تنسيق رابط الألعاب */
+        .game-link {
+            color: #ff9800; /* لون برتقالي */
+            font-weight: bold;
+            text-decoration: none;
+            border: 2px solid #ff9800; /* إضافة حد برتقالي */
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .game-link:hover {
+            background-color: #ff9800; /* تغيير الخلفية عند التمرير */
             color: white;
         }
 
@@ -95,14 +112,24 @@
     <!-- محتوى الموقع -->
     <div class="main-content">
         <div class="header">
-            <h1>مرحبًا بك في موقعنا</h1>
+            <h1>مرحبًا في موقعنا</h1>
             <p>اختَر أحد الخيارات من القائمة لتعرف المزيد</p>
         </div>
+
+        <!-- الصفحة الرئيسية -->
+        <section id="home" style="display: block;">
+            <h2>مرحبًا في موقعنا</h2>
+            <p>نقدم لكم أفضل الخدمات والألعاب، استمتعوا بكل لحظة!</p>
+        </section>
 
         <!-- قسم الالعاب -->
         <section id="service1" style="display: none;">
             <h2>الالعاب</h2>
-            <p>رابط للعبة ببجي: <a href="https://www.pubg.com" target="_blank">اضغط هنا للذهاب إلى لعبة ببجي</a></p>
+            <p>رابط لعبة <strong>PS4</strong>:</p>
+            <ul>
+                <li><a href="https://pspkg.com/arabic-games/dark-souls-remastered-7091.html" target="_blank" class="game-link">Dark Souls Remastered</a></li>
+                <li><a href="https://pspkg.com/ps4/grand-theft-auto-v-ps4-6657.html" target="_blank" class="game-link">Grand Theft Auto V</a></li>
+            </ul>
         </section>
 
         <!-- قسم الخدمات -->
