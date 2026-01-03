@@ -1,11 +1,141 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<meta charset="UTF-8">
-<title>موقعي</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع خدماتي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* نمط الشريط الجانبي */
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            display: block;
+            transition: 0.3s;
+            color: #818181;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        /* ألوان لكل خيار */
+        .service1 {
+            background-color: #4CAF50; /* لون أخضر */
+        }
+
+        .service2 {
+            background-color: #2196F3; /* لون أزرق */
+        }
+
+        .service3 {
+            background-color: #FF9800; /* لون برتقالي */
+        }
+
+        .contact {
+            background-color: #f44336; /* لون أحمر */
+        }
+
+        /* نمط زر الهامبورغر */
+        #menu-btn {
+            font-size: 30px;
+            cursor: pointer;
+            color: #333;
+            margin: 20px;
+        }
+
+        /* المحتوى الرئيسي */
+        .main-content {
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px;
+            background-color: #333;
+            color: white;
+        }
+
+    </style>
 </head>
-<body style="text-align:center">
-<h1>أهلاً 👋</h1>
-<p>هذا موقعي العام المجاني</p>
+<body>
+
+    <!-- زر الهامبورغر -->
+    <span id="menu-btn" onclick="openNav()">☰</span>
+
+    <!-- الشريط الجانبي -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#service1" class="service1">خدمة العملات</a>
+        <a href="#service2" class="service2">خدمات</a>
+        <a href="#service3" class="service3">الشحن</a>
+        <a href="#contact" class="contact">اتصل بي</a>
+    </div>
+
+    <!-- محتوى الموقع -->
+    <div class="main-content">
+        <div class="header">
+            <h1>مرحبًا بك في موقعنا</h1>
+            <p>اختَر أحد الخيارات من القائمة لتعرف المزيد</p>
+        </div>
+
+        <!-- قسم خدمة العملات -->
+        <section id="service1">
+            <h2>خدمة العملات</h2>
+            <p>هنا يمكنك معرفة تفاصيل خدمة العملات.</p>
+        </section>
+
+        <!-- قسم الخدمات -->
+        <section id="service2">
+            <h2>خدمات</h2>
+            <p>اكتشف جميع الخدمات التي نقدمها.</p>
+        </section>
+
+        <!-- قسم الشحن -->
+        <section id="service3">
+            <h2>الشحن</h2>
+            <p>تفاصيل حول خدمات الشحن التي نقدمها.</p>
+        </section>
+
+        <!-- قسم اتصل بي -->
+        <section id="contact">
+            <h2>اتصل بي</h2>
+            <p>يمكنك الاتصال بي عبر الرقم: <strong>+9630940968762</strong></p>
+        </section>
+    </div>
+
+    <!-- سكربت فتح وإغلاق الشريط الجانبي -->
+    <script>
+        // فتح الشريط الجانبي
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        // إغلاق الشريط الجانبي
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
 </body>
 </html>
