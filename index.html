@@ -11,8 +11,6 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-
-        /* نمط الشريط الجانبي */
         .sidenav {
             height: 100%;
             width: 0;
@@ -20,83 +18,57 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: #009688; /* لون أزرق فاتح */
+            background-color: #009688;
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
         }
-
         .sidenav a {
             padding: 8px 8px 8px 32px;
             text-decoration: none;
             font-size: 25px;
             display: block;
             transition: 0.3s;
-            color: #ffffff; /* تغيير اللون الأبيض للنصوص */
+            color: #ffffff;
         }
-
         .sidenav a:hover {
-            color: #f1f1f1; /* نص أبيض عند التمرير */
+            color: #f1f1f1;
         }
-
-        /* ألوان لكل خيار */
-        .home {
-            background-color: #4caf50; /* لون أخضر فاتح */
-        }
-
-        .service1 {
-            background-color: #00bcd4; /* لون أزرق فاتح */
-        }
-
-        .service2 {
-            background-color: #ff9800; /* لون برتقالي */
-        }
-
-        .service3 {
-            background-color: #8bc34a; /* لون أخضر فاتح */
-        }
-
-        .contact {
-            background-color: #f44336; /* لون أحمر */
-        }
-
-        /* نمط زر الهامبورغر */
+        .home { background-color: #4caf50; }
+        .service1 { background-color: #00bcd4; }
+        .service2 { background-color: #ff9800; }
+        .service3 { background-color: #8bc34a; }
+        .contact { background-color: #f44336; }
         #menu-btn {
             font-size: 30px;
             cursor: pointer;
             color: #333;
             margin: 20px;
         }
-
-        /* المحتوى الرئيسي */
         .main-content {
             padding: 20px;
         }
-
         .header {
             text-align: center;
             padding: 30px;
-            background-color: #4caf50; /* تغيير اللون إلى أخضر فاتح */
+            background-color: #4caf50;
             color: white;
         }
-
-        /* تنسيق رابط الألعاب */
         .game-link {
-            color: #ff9800; /* لون برتقالي */
+            color: #ff9800;
             font-weight: bold;
             text-decoration: none;
-            border: 2px solid #ff9800; /* إضافة حد برتقالي */
+            border: 2px solid #ff9800;
             padding: 10px;
             border-radius: 5px;
             display: inline-block;
             transition: background-color 0.3s;
+            margin: 5px 0;
         }
-
         .game-link:hover {
-            background-color: #ff9800; /* تغيير الخلفية عند التمرير */
+            background-color: #ff9800;
             color: white;
         }
-
     </style>
 </head>
 <body>
@@ -136,10 +108,18 @@
         <!-- قسم الالعاب -->
         <section id="service1" style="display: none;">
             <h2>الالعاب</h2>
-            <p>رابط لعبة <strong>PS4</strong>:</p>
+            <p>روابط الألعاب:</p>
             <ul>
-                <li><a href="https://pspkg.com/arabic-games/dark-souls-remastered-7091.html" target="_blank" class="game-link">رابط لعبة Dark Souls Remastered</a></li>
-                <li><a href="https://pspkg.com/ps4/grand-theft-auto-v-ps4-6657.html" target="_blank" class="game-link">رابط لعبة Grand Theft Auto V</a></li>
+                <!-- Resident Evil (مرتّبة معاً) -->
+                <li><a href="https://pspkg.com/arabic-games/resident-evil-origins-collection-7035.html" target="_blank" class="game-link">Resident Evil Origins Collection</a></li>
+                <li><a href="https://pspkg.com/arabic-games/resident-evil-5-arabic-278.html" target="_blank" class="game-link">Resident Evil 5</a></li>
+                <li><a href="https://pspkg.com/arabic-games/resident-evil-6-arabic-79.html" target="_blank" class="game-link">Resident Evil 6</a></li>
+                <li><a href="https://pspkg.com/arabic-games/resident-evil-7-biohazard-gold-edition-arabic-217.html" target="_blank" class="game-link">Resident Evil 7 Biohazard Gold Edition</a></li>
+                <li><a href="https://pspkg.com/arabic-games/resident-evil-4-remake-gold-edition-arabic-214.html" target="_blank" class="game-link">Resident Evil 4 Remake Gold Edition</a></li>
+                <!-- ألعاب أخرى -->
+                <li><a href="https://pspkg.com/arabic-games/red-dead-redemption-2-arabic-251.html" target="_blank" class="game-link">Red Dead Redemption 2</a></li>
+                <li><a href="https://pspkg.com/arabic-games/dark-souls-remastered-7091.html" target="_blank" class="game-link">Dark Souls Remastered</a></li>
+                <li><a href="https://pspkg.com/ps4/grand-theft-auto-v-ps4-6657.html" target="_blank" class="game-link">Grand Theft Auto V</a></li>
             </ul>
         </section>
 
@@ -156,27 +136,19 @@
         </section>
     </div>
 
-    <!-- سكربت فتح وإغلاق الشريط الجانبي -->
+    <!-- سكربت -->
     <script>
-        // فتح الشريط الجانبي
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
         }
-
-        // إغلاق الشريط الجانبي
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
-
-        // إظهار المحتوى عند الضغط على الخيار
         function showContent(sectionId) {
-            // إخفاء جميع الأقسام
             var sections = document.querySelectorAll('.main-content section');
             sections.forEach(function(section) {
                 section.style.display = 'none';
             });
-
-            // إظهار القسم الذي تم الضغط عليه
             document.getElementById(sectionId).style.display = 'block';
         }
     </script>
