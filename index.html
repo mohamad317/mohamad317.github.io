@@ -11,6 +11,8 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
+        /* نمط الشريط الجانبي */
         .sidenav {
             height: 100%;
             width: 0;
@@ -18,11 +20,12 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: #009688;
+            background-color: #009688; /* لون أزرق فاتح */
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
         }
+
         .sidenav a {
             padding: 8px 8px 8px 32px;
             text-decoration: none;
@@ -31,29 +34,67 @@
             transition: 0.3s;
             color: #ffffff;
         }
+
         .sidenav a:hover {
             color: #f1f1f1;
         }
-        .home { background-color: #4caf50; }
-        .service1 { background-color: #00bcd4; }
-        .service2 { background-color: #ff9800; }
-        .service3 { background-color: #8bc34a; }
-        .contact { background-color: #f44336; }
+
+        /* ألوان لكل خيار */
+        .home {
+            background-color: #4caf50;
+        }
+
+        .service1 {
+            background-color: #00bcd4;
+        }
+
+        .service2 {
+            background-color: #ff9800;
+        }
+
+        .service3 {
+            background-color: #8bc34a;
+        }
+
+        .contact {
+            background-color: #f44336;
+        }
+
+        /* نمط زر الهامبورغر */
         #menu-btn {
             font-size: 30px;
             cursor: pointer;
             color: #333;
             margin: 20px;
         }
+
+        /* المحتوى الرئيسي */
         .main-content {
             padding: 20px;
         }
+
         .header {
             text-align: center;
             padding: 30px;
             background-color: #4caf50;
             color: white;
+            border-radius: 50%; /* جعل الشكل مدور */
+            width: 300px;
+            margin: auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
         }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        /* تنسيق رابط الألعاب */
         .game-link {
             color: #ff9800;
             font-weight: bold;
@@ -65,10 +106,12 @@
             transition: background-color 0.3s;
             margin: 5px 0;
         }
+
         .game-link:hover {
             background-color: #ff9800;
             color: white;
         }
+
     </style>
 </head>
 <body>
@@ -90,7 +133,7 @@
     <div class="main-content">
         <div class="header">
             <h1>مرحبًا في موقعنا</h1>
-            <p>اختَر أحد الخيارات من القائمة لتعرف المزيد</p>
+            <p>نقدم لكم أفضل الخدمات والألعاب، استمتعوا بكل لحظة!</p>
         </div>
 
         <!-- الصفحة الرئيسية -->
@@ -110,7 +153,7 @@
             <h2>الالعاب</h2>
             <p>روابط الألعاب:</p>
             <ul>
-                <!-- Resident Evil (مرتّبة معاً) -->
+                <!-- Resident Evil (مرتّبة معًا) -->
                 <li><a href="https://pspkg.com/arabic-games/resident-evil-origins-collection-7035.html" target="_blank" class="game-link">Resident Evil Origins Collection</a></li>
                 <li><a href="https://pspkg.com/arabic-games/resident-evil-5-arabic-278.html" target="_blank" class="game-link">Resident Evil 5</a></li>
                 <li><a href="https://pspkg.com/arabic-games/resident-evil-6-arabic-79.html" target="_blank" class="game-link">Resident Evil 6</a></li>
@@ -118,6 +161,7 @@
                 <li><a href="https://pspkg.com/arabic-games/resident-evil-4-remake-gold-edition-arabic-214.html" target="_blank" class="game-link">Resident Evil 4 Remake Gold Edition</a></li>
                 <!-- ألعاب أخرى -->
                 <li><a href="https://pspkg.com/arabic-games/red-dead-redemption-2-arabic-251.html" target="_blank" class="game-link">Red Dead Redemption 2</a></li>
+                <li><a href="https://pspkg.com/arabic-games/call-of-duty-black-ops-6-arabic-243.html" target="_blank" class="game-link">Call of Duty Black Ops 6</a></li>
                 <li><a href="https://pspkg.com/arabic-games/dark-souls-remastered-7091.html" target="_blank" class="game-link">Dark Souls Remastered</a></li>
                 <li><a href="https://pspkg.com/ps4/grand-theft-auto-v-ps4-6657.html" target="_blank" class="game-link">Grand Theft Auto V</a></li>
             </ul>
@@ -136,7 +180,7 @@
         </section>
     </div>
 
-    <!-- سكربت -->
+    <!-- سكربت فتح وإغلاق الشريط الجانبي -->
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
