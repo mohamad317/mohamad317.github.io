@@ -40,6 +40,10 @@
         }
 
         /* ألوان لكل خيار */
+        .home {
+            background-color: #4caf50; /* لون أخضر فاتح */
+        }
+
         .service1 {
             background-color: #00bcd4; /* لون أزرق فاتح */
         }
@@ -103,9 +107,10 @@
     <!-- الشريط الجانبي -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#home" class="home" onclick="showContent('home')">الصفحة الرئيسية</a>
+        <a href="#service2" class="service2" onclick="showContent('service2')">الخدمات</a>
         <a href="#service1" class="service1" onclick="showContent('service1')">الالعاب</a>
-        <a href="#service2" class="service2" onclick="showContent('service2')">خدمات</a>
-        <a href="#service3" class="service3" onclick="showContent('service3')">الشحن</a>
+        <a href="#service3" class="service3" onclick="showContent('service3')">التطبيقات</a>
         <a href="#contact" class="contact" onclick="showContent('contact')">اتصل بي</a>
     </div>
 
@@ -122,26 +127,26 @@
             <p>نقدم لكم أفضل الخدمات والألعاب، استمتعوا بكل لحظة!</p>
         </section>
 
+        <!-- قسم الخدمات -->
+        <section id="service2" style="display: none;">
+            <h2>الخدمات</h2>
+            <p>نقدم لكم ألعاب وبرامج مجانية للكمبيوتر ولـ PS4.</p>
+        </section>
+
         <!-- قسم الالعاب -->
         <section id="service1" style="display: none;">
             <h2>الالعاب</h2>
             <p>رابط لعبة <strong>PS4</strong>:</p>
             <ul>
-                <li><a href="https://pspkg.com/arabic-games/dark-souls-remastered-7091.html" target="_blank" class="game-link">Dark Souls Remastered</a></li>
-                <li><a href="https://pspkg.com/ps4/grand-theft-auto-v-ps4-6657.html" target="_blank" class="game-link">Grand Theft Auto V</a></li>
+                <li><a href="https://pspkg.com/arabic-games/dark-souls-remastered-7091.html" target="_blank" class="game-link">رابط لعبة Dark Souls Remastered</a></li>
+                <li><a href="https://pspkg.com/ps4/grand-theft-auto-v-ps4-6657.html" target="_blank" class="game-link">رابط لعبة Grand Theft Auto V</a></li>
             </ul>
         </section>
 
-        <!-- قسم الخدمات -->
-        <section id="service2" style="display: none;">
-            <h2>خدمات</h2>
-            <p>اكتشف جميع الخدمات التي نقدمها.</p>
-        </section>
-
-        <!-- قسم الشحن -->
+        <!-- قسم التطبيقات -->
         <section id="service3" style="display: none;">
-            <h2>الشحن</h2>
-            <p>تفاصيل حول خدمات الشحن التي نقدمها.</p>
+            <h2>التطبيقات</h2>
+            <p>اكتشف أحدث التطبيقات المميزة.</p>
         </section>
 
         <!-- قسم اتصل بي -->
