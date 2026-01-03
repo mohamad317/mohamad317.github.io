@@ -12,7 +12,7 @@
             background-color: #f4f4f4;
         }
 
-        /* نمط الشريط الجانبي */
+        /* الشريط الجانبي */
         .sidenav {
             height: 100%;
             width: 0;
@@ -35,9 +35,7 @@
             color: #ffffff;
         }
 
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
+        .sidenav a:hover { color: #f1f1f1; }
 
         .home { background-color: #4caf50; }
         .service1 { background-color: #00bcd4; }
@@ -52,10 +50,9 @@
             margin: 20px;
         }
 
-        .main-content {
-            padding: 20px;
-        }
+        .main-content { padding: 20px; }
 
+        /* الدائرة */
         .header {
             text-align: center;
             padding: 30px;
@@ -70,15 +67,19 @@
         .header h1 { font-size: 28px; font-weight: bold; }
         .header p { font-size: 18px; color: #fff; }
 
-        /* تنسيق الفقرات داخل مستطيلات */
+        /* مستطيلات الفقرات */
         .content-section {
-            background-color: #e3f2fd; /* أزرق فاتح للخلفية */
             padding: 15px 20px;
             margin: 15px 0;
             border-radius: 8px;
-            color: #1a237e; /* أزرق داكن للنص */
+            color: #1a237e;
             line-height: 1.6;
         }
+        /* ألوان مختلفة لكل فقرة */
+        .color1 { background-color: #e3f2fd; } /* أزرق فاتح */
+        .color2 { background-color: #ffe0b2; } /* برتقالي فاتح */
+        .color3 { background-color: #c8e6c9; } /* أخضر فاتح */
+        .color4 { background-color: #f8bbd0; } /* وردي فاتح */
 
         .game-link {
             color: #ff9800;
@@ -128,36 +129,33 @@
 
     <div class="main-content">
         <div class="header">
-            <h1>مرحبًا في موقعنا</h1>
+            <h1>Baroudi.Site</h1>
             <p>نقدم لكم أفضل الخدمات والألعاب، استمتعوا بكل لحظة!</p>
         </div>
 
-        <!-- الصفحة الرئيسية -->
         <section id="home" style="display: block;">
             <h2>مرحبًا في موقعنا</h2>
-            <div class="content-section">
+            <div class="content-section color1">
                 <p>نقدم لك أفضل الألعاب المجانية والبرامج المميزة للـ بي اس فور. سواء كنت محبًا للألعاب أو تبحث عن برامج جديدة لتحسين تجربتك، ستجد هنا كل ما تحتاجه.</p>
             </div>
-            <div class="content-section">
+            <div class="content-section color2">
                 <p>استمتع بمكتبة ضخمة من الألعاب المجانية والتطبيقات التي ستأخذك إلى عوالم جديدة! اكتشف الآن الألعاب المجانية وابقَ على اطلاع مع آخر التحديثات.</p>
             </div>
-            <div class="content-section">
+            <div class="content-section color3">
                 <p>إذا كنت جديدًا هنا، نحن نقدم لك أفضل ألعاب <strong>بي اس فور</strong> وأحدث الألعاب، كل ذلك بشكل مجاني! بالإضافة إلى التحديثات المستمرة لتجربة لعب أفضل.</p>
             </div>
-            <div class="content-section">
+            <div class="content-section color4">
                 <p>استمتع الآن بمجموعتنا المتنوعة من الألعاب والتطبيقات التي ستجعل تجربتك الرقمية أكثر متعة!</p>
             </div>
         </section>
 
-        <!-- قسم الخدمات -->
         <section id="service2" style="display: none;">
             <h2>الخدمات</h2>
-            <div class="content-section">
+            <div class="content-section color1">
                 <p>نقدم لكم ألعاب وبرامج مجانية للـ بي اس فور.</p>
             </div>
         </section>
 
-        <!-- قسم الالعاب -->
         <section id="service1" style="display: none;">
             <h2>الالعاب</h2>
             <p>روابط الألعاب:</p>
@@ -177,14 +175,14 @@
 
         <section id="service3" style="display: none;">
             <h2>التطبيقات</h2>
-            <div class="content-section">
+            <div class="content-section color2">
                 <p>اكتشف أحدث التطبيقات المميزة.</p>
             </div>
         </section>
 
         <section id="contact" style="display: none;">
             <h2>اتصل بي</h2>
-            <div class="content-section">
+            <div class="content-section color3">
                 <p>يمكنك الاتصال بي عبر الرقم: <strong>+9630940968762</strong></p>
             </div>
         </section>
